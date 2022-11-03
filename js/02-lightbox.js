@@ -24,7 +24,10 @@ function clickOnImage(event) {
 }
 
 let lightbox = new SimpleLightbox(".gallery a", {
-  captionType: "alt",
+  captions: true,
+  captionsData: "alt",
+  captionSelector: "img",
   captionDelay: 250,
+  captionPosition: "bottom",
 });
 console.log(galleryItems);
